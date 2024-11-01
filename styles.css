@@ -1,0 +1,10 @@
+body{
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.880);
+}
+.icon{
+    width: 15px;
+    height: 15px;
+    filter: invert(85%);
+    padding: 3px;
+}
