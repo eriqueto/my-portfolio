@@ -4,12 +4,15 @@ body{
     margin-left: 30px;
     margin-top: 30px;
     box-sizing: border-box;
+    display: flex;
+
 }
 h1{
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(255, 255, 255, 1);
 }
-p{
-    color: rgba(255, 255, 255, 0.9);
+.occupation{
+    color: rgba(255, 255, 255, 0.8);
+    
 }
 .profile-pic{
     border-radius: 50%;
@@ -26,6 +29,7 @@ p{
 }
 .contact p{
     display: inline;
+    color: rgba(255, 255, 255, 1);
 }
 .contact div{
     padding: 5px;
@@ -39,9 +43,12 @@ p{
 
 .socials a {
     display: inline-block;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .socials a:hover {
     transform: translateY(-5px);
+}
+.right-section{
+    margin-left: 300px;
 }
