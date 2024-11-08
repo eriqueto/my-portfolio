@@ -6,6 +6,7 @@ body{
     margin-right: 50px;
     box-sizing: border-box;
     display: flex;
+    flex-direction: row;
 }
 .left-section{
     position: fixed;
@@ -100,7 +101,7 @@ h1{
     font-size: 13px;
 }
 .date{
-    font-size: 11px
+    font-size: 12px
 }
 .experience-description{
     display: flex;
@@ -129,4 +130,25 @@ span{
     height: 25px;
     filter: invert(100%);
     padding: 10px  
+}
+.bachelor{
+    color: white;
+    font-size: 18px;
+}
+.institution{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+}
+.date{
+    font-size: 11px
+}
+.education-description{
+    display: flex;
+}
+.content{
+    line-height: 40px;
+}
+.ed{
+    margin-left: 20px;
+    border-left: 1.5px  ridge rgba(255, 255, 255, 0.295);
 }
