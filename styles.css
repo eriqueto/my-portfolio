@@ -7,7 +7,9 @@ body{
     box-sizing: border-box;
     display: flex;
 }
-
+.left-section{
+    position: fixed;
+}
 h1{
     color: rgba(255, 255, 255, 1);
 }
@@ -50,7 +52,7 @@ h1{
     transform: translateY(-5px);
 }
 .right-section{
-    margin-left: 250px;
+    margin-left: 550px;
 }
 .right-section h1{
     margin: 20px;
@@ -105,7 +107,7 @@ h1{
     
 }
 .content{
-    line-height: 35px;
+    line-height: 40px;
 }
 .exp{
     margin-left: 20px;
@@ -116,4 +118,15 @@ li{
 }
 span{
     color: white;
+    font-size: 15px;
+}
+.tools{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tools .icon{
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+    padding: 10px  
 }
