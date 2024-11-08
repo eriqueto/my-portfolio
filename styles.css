@@ -7,6 +7,7 @@ body{
     box-sizing: border-box;
     display: flex;
 }
+
 h1{
     color: rgba(255, 255, 255, 1);
 }
@@ -78,4 +79,41 @@ h1{
 }
 .languages-div p{
     line-height: 10px;
+}
+.description{
+    line-height: 5px;
+    margin-left: 10px;
+}
+.logo{
+    border-radius: 50%;
+    width: 75px;
+    margin-left: 20px;
+}
+.role{
+    color: white;
+    font-size: 18px;
+}
+.place-of-work{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+}
+.date{
+    font-size: 11px
+}
+.experience-description{
+    display: flex;
+    
+}
+.content{
+    line-height: 35px;
+}
+.exp{
+    margin-left: 20px;
+    border-left: 1.5px  ridge rgba(255, 255, 255, 0.295);
+}
+li{
+    color: rgba(255, 255, 255, 0.8);
+}
+span{
+    color: white;
 }
