@@ -18,8 +18,3 @@ To visualize the project, follow these steps:
 
 3. **Open the `index.html` File**:
     Open the `index.html` file in your preferred web browser to view the portfolio website.
-
-## Technologies Used
-
-- HTML
-- CSS
