@@ -1,25 +1,29 @@
 body{
     background-color: #121212;
+    overflow-x: hidden;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 50px 0px;
-    margin-left: 100px;
-    margin-right: 50px;
+    margin: 0;
+    padding: 0 5%;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
+}
+html {
+    overflow-x: hidden;
 }
 .left-section{
     position: fixed;
+    width: 25%;
 }
 h1{
     color: rgba(255, 255, 255, 1);
 }
 .occupation{
-    color: rgba(255, 255, 255, 0.8);  
+    color: rgba(255, 255, 255, 0.8);
+    padding-right: 0.5em;  
 }
 .profile-pic{
     border-radius: 50%;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
 }
 .socials .icon{
     width: 30px;
@@ -52,7 +56,8 @@ h1{
     filter: invert(10%);
 }
 .right-section{
-    margin-left: 550px;
+    margin-left: 30%;
+    width: 65%;
 }
 .right-section h1{
     margin: 20px;
@@ -60,31 +65,41 @@ h1{
 .right-section p{
     color: rgba(255, 255, 255, 0.8);
 }
+.skills{
+    max-width: 100%;
+    width: 100%;
+}
 .languages-div{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     flex-wrap: wrap;
-    width: 800px;
+    width: 100%;
+    max-width: 80%;
 }
 .languages-div .icon{
     width: 20px;
     height: 20px;
     filter: invert(100%);
-    padding: 10px  
+    padding: 10px;
+    margin-top: 7px;
 }
 .languages-div div *{
-    width: 100px;
-    float:left;
+    width: 6.25em;
+    float: left;
 }
 .languages-div p{
-    line-height: 10px;
+    line-height: 1.5;
+
 }
 .description{
-    line-height: 5px;
+    line-height: 1.5;
     margin-left: 10px;
+}
+.logo-div{
+    display: inline-block;
 }
 .logo{
     border-radius: 50%;
@@ -94,34 +109,44 @@ h1{
 .role{
     color: white;
     font-size: 18px;
+    margin: 5px;
 }
 .place-of-work{
     color: rgba(255, 255, 255, 0.8);
     font-size: 13px;
+    margin: 5px;
 }
 .date{
-    font-size: 12px
+    font-size: 12px;
+    margin: 5px;
 }
 .experience-description{
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
 }
 .content{
-    line-height: 40px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 .exp{
     margin-left: 20px;
     border-left: 1.5px  ridge rgba(255, 255, 255, 0.295);
+    max-width: 100%;
+    width: 100%;
 }
 li{
-    color: rgba(255, 255, 255, 0.8);
+    color:white;
 }
-span{
-    color: white;
-    font-size: 15px;
+.content p{
+    color: rgba(255, 255, 255, 0.8);
 }
 .tools{
     display: flex;
     justify-content: space-evenly;
+    max-width: 80%;
 }
 .tools .icon{
     width: 25px;
@@ -132,26 +157,31 @@ span{
 .bachelor{
     color: white;
     font-size: 18px;
+    margin: 5px;
 }
 .institution{
     color: rgba(255, 255, 255, 0.8);
     font-size: 13px;
+    margin: 5px;
 }
 .date{
-    font-size: 11px
+    font-size: 11px;
+    margin: 5px;
 }
 .education-description{
     display: flex;
-}
-.content{
-    line-height: 40px;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
 }
 .ed{
-    margin-left: 20px;
+    margin-left: 1.25rem;
     border-left: 1.5px  ridge rgba(255, 255, 255, 0.295);
+    width: 100%;
+    max-width: 100%;
 }
 .project{
-    margin-left: 20px;
+    margin-left: 1.25em;
     border-left: 1.5px  ridge rgba(255, 255, 255, 0.295);
 }
 .project h1{
@@ -163,9 +193,9 @@ span{
 }
 .project-github img{
     filter: invert(90%);
-    width: 17.5px;
-    margin-top: 20px;
-    margin-left: 10px;
+    width: 1.09375rem;
+    margin-top: 1.25rem;
+    margin-left: 0.625rem; 
 }
 .project-github a {
     display: inline-block;
@@ -177,32 +207,32 @@ span{
 .project-languages{
     display: flex;
     justify-content: left;
-    gap: 10px;
-    margin-left: 10px
+    gap: 0.625rem;
+    margin-left: 0.625rem; 
 }
 .below{
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 .project-title{
-    font-size: 13px;
+    font-size: 1.125rem; 
 }
 .above{
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
 }
 .project-language{
     color: rgba(255, 255, 255, 0.8);
     border: 1px ridge rgba(255, 255, 255, 0.295);
-    padding: 2px 10px;
-    border-radius: 10px;
+    padding: 0.125rem 0.625rem;
+    border-radius: 0.625rem; 
     font-weight: bold;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 .github-container{
     display: flex;
     align-items: center;
-    gap: 1.5px; 
+    gap: 0.625rem;
 }
 .project-github{
     display: flex;
@@ -217,4 +247,42 @@ span{
 }
 .github-container a{
     text-decoration: none;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+    margin-left: 100px;
+    margin-right: 50px;
+    box-sizing: border-box;
+}
+@media (max-width: 1550px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start; 
+        margin-left: 0; 
+        margin-right: 0;
+    }
+    .right-section {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .left-section {
+        position: static;
+        margin-left: 20px;
+        width: 100%;
+    }
+    body{
+        margin: 0px;
+    }
+    .socials{
+        display: flex;
+        gap: 10%;
+        max-width: 100%;
+    }
+    .languages-div{
+        margin-left: 20px;
+    }
 }
